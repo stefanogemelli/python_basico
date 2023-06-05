@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "FastApi:main.read_root (python3.10)",
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/FastApi",
+        "lambdaHandler": "main.read_root"
+      },
+      "lambda": {
+        "runtime": "python3.10",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
